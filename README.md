@@ -1,2 +1,5 @@
-# Turbo_C
-Games made in TurboC++
+# Text-Game
+
+Welcome to the wonderfull land of the Lazourous!
+Embark on a journey not yet seen anywhere...
+
