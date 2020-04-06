@@ -1,0 +1,12 @@
+#look
+The path leads to a Big hall. There are doors to your left,
+right and one direcrtly in front of you. In the middle of the hall
+there is a big Statue from which the light is emerging.%
+
+#x+statue
+The statue was of the old knight Galvidar, first of his name.
+It had the blue light emmiting from it%
+
+#exit
+Thanks for playing.%
+

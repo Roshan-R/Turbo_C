@@ -1,24 +1,32 @@
-look0
- You don't know how much time has passed. Slowly, you regain your senses.
+#look
+You don't know how much time has passed. Slowly, you regain your senses.
 You find yourself in complete darkness, except for a dim light
 coming from somewhere illuminating your surroundings.
 As your eyes slowly adjust to the dark, you find yourself in a cave.
 A mysterious light is coming from somewhere in front of you.%
-x+cave0
- In the faint light,you could make out that the walls of
+
+#x+cave
+In the faint light,you could make out that the walls of
 the cave depict ancient paintings.%
-x+light0
- The light is of bluish white,as there is only a dead end behind you,
+
+#x+light
+The light is of bluish white,as there is only a dead end behind you,
 the only other option is to follow the light.%
-x+paintings0
- The paintings show of great wars, grandoise kings and revolting peasants.%
-go+to+light0
- 1%
-look1
- The path leads to a Big hall. There are doors to your left,
+
+#x+paintings
+The paintings show of great wars, grandoise kings and revolting peasants.%
+
+#go+to+light
+1%
+
+#look
+The path leads to a Big hall. There are doors to your left,
 right and one direcrtly in front of you. In the middle of the hall
 there is a big Statue from which the light is emerging.%
-x+statue1
- The statue looks cool.%
-exit0
- Thanks for playing.%
+
+#x+statue
+The statue looks cool.%
+
+#exit
+Thanks for playing.%
+
