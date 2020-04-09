@@ -3,7 +3,7 @@ You don't know how much time has passed. Slowly, you regain your senses.
 You find yourself in complete darkness, except for a dim light
 coming from somewhere illuminating your surroundings.
 As your eyes slowly adjust to the dark, you find yourself in a cave.
-A mysterious light is coming from somewhere in front of you.%
+A mysterious light is coming from east.%
 
 #x+cave
 In the faint light,you could make out that the walls of
@@ -17,6 +17,9 @@ the only other option is to follow the light.%
 The paintings show of great wars, grandoise kings and revolting peasants.%
 
 #follow+light
+1%
+
+#go+east
 1%
 
 #exit

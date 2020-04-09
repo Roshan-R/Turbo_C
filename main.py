@@ -37,8 +37,9 @@ def open_room(lvl):
 def main():
     key = b'BB05kF8Pc4yLYfLB6Kn-jorUtg1_2ZbDeN70IjXjATA='
     character = player()
+    keyword = ""
     level_text = open_room(character.lvl)
-    keyword="look"
+    display(get_text("look",level_text))
     while keyword != "exit":
         keyword=input("> ")
         text = get_text(keyword,level_text)
