@@ -16,6 +16,9 @@ the only other option is to follow the light.%
 #x+paintings
 The paintings show of great wars, grandoise kings and revolting peasants.%
 
+#take+painting
+painting%
+
 #follow+light
 1%
 

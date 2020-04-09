@@ -5,7 +5,15 @@ from cryptography.fernet import Fernet
 
 class player:
     lvl=0
-
+    inventory=[]
+    
+    def show_inventory(self):
+        if len(self.inventory) == 0:
+            display("You have nothing in your inventory")
+        else:
+            print("You have :\n")
+            for item in self.inventory:
+                print("\t",item)
 def get_text(keyword,level_text):
     keyword=modify_input(keyword)
     pattern=re.compile(rf'#{re.escape(keyword)}+\s([0-9a-zA-Z\s\'\.,]*)%')
@@ -37,18 +45,32 @@ def open_room(lvl):
 def main():
     key = b'BB05kF8Pc4yLYfLB6Kn-jorUtg1_2ZbDeN70IjXjATA='
     character = player()
-    keyword = ""
+    userInput = ""
     level_text = open_room(character.lvl)
+    print()
     display(get_text("look",level_text))
-    while keyword != "exit":
-        keyword=input("> ")
-        text = get_text(keyword,level_text)
-        if text.isnumeric():
+    keywords = ['l','look','take','x','examine','go','go','follow','inventory']
+    while userInput != "exit":
+        userInput=input("> ")
+        text = get_text(userInput,level_text)
+        if userInput.split(' ')[0] not in keywords:
+            display("Come again?")
+        elif userInput == "inventory":
+            character.show_inventory()
+        elif text.isnumeric():
             character.lvl = int(text)
             level_text=open_room(character.lvl)
-            keyword="look"
-            text = get_text(keyword,level_text)
-        display(text)
+            userInput="look"
+            text = get_text(userInput,level_text)
+            display(text)
+        elif re.match(r'take \w*$',userInput): 
+            if get_text(userInput,level_text) == userInput.split(' ')[1]: 
+                character.inventory.append(text)
+                display("You took the " + userInput.split(' ')[1] + " !")
+            else:
+                display("I can't see such a thing!")
+        else:
+            display(text)
             
 
 main()
